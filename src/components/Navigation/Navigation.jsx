@@ -15,7 +15,7 @@ const Navigation = () => {
                 <ul className={click ? "navLinks active" : "navLinks"}>
                     <li> <Link to={'/'}>Home</Link> </li>
                     <li> <Link to={'/weather'}>Weather</Link> </li>
-                    <li> <Link to={'/crypto-update'}>Crypto News</Link> </li>
+                    <li> <Link to={'/crypto-update'}>Crypto </Link> </li>
                     <li> <Link to={'/daily-news'}>Daily News</Link> </li>
                     <li> <Link to={'/contact'}>Contact</Link> </li>
                 </ul>

@@ -22,6 +22,11 @@
 .navLinks a {
   font-size: 1.2rem;
   font-weight: 500;
+  transition: 500ms all ease;
+}
+.navLinks a:hover {
+  color: cornflowerblue;
+  border-bottom: 2px solid cornflowerblue;
 }
 .hamburger {
   display: none;
