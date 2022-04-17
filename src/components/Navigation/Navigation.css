@@ -31,6 +31,7 @@
 @media screen and (max-width: 1240px) {
   .hamburger {
     display: block;
+    cursor: pointer;
   }
   .navLinks {
     position: absolute;

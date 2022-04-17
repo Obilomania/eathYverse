@@ -36,11 +36,14 @@ const WeatherContent = () => {
                     <div className="location">
                         <p>{data.name}</p>
                     </div>
+                    <div className="Country">
+                        {data.weather ? <p>{data.sys.country}</p> : null}
+                    </div>
                     <div className="temp">
                         {data.main ? <h1> {data.main.temp.toFixed()} °C </h1> : null}
                     </div>
                     <div className="description">
-                        {data.weather ? <p>{data.weather[0].main}</p> : null}
+                        {data.weather ? <p>{data.weather[0].description.toUpperCase()}</p> : null}
                     </div>
                 </div>
 
