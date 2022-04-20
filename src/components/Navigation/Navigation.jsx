@@ -16,8 +16,6 @@ const Navigation = () => {
                     <li> <Link to={'/'}>Home</Link> </li>
                     <li> <Link to={'/weather'}>Weather</Link> </li>
                     <li> <Link to={'/crypto-update'}>Crypto </Link> </li>
-                    <li> <Link to={'/daily-news'}>Daily News</Link> </li>
-                    <li> <Link to={'/contact'}>Contact</Link> </li>
                 </ul>
                 <div className="hamburger" onClick={handleClick}>
                     {click ? (<FaTimes size={25} style={{ color: 'white' }} />) : (<FaBars size={25} style={{ color: 'white' }} />)}

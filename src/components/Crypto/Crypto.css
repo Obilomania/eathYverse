@@ -4,36 +4,97 @@
 .red {
   color: red;
 }
-.featured{
-
-  position: fixed;
-  top: 12%;
-  left: 20%;
+.featured {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  top: 10%;
 }
-.featured h1{
+.featured h1 {
   text-align: center;
-  margin-bottom: 2rem;
+  margin: 1.5rem 0;
   color: cornflowerblue;
 }
-.cards{
- display: grid;
+.cards {
+  position: absolute;
+  top: 100%;
+  display: grid;
   grid-template-columns: 150px 150px 150px 150px 150px;
   grid-template-rows: 150px 150px;
   grid-gap: 2rem;
+  margin-bottom: 10rem;
 }
-.card{
+.card {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: rgba(255  ,255 , 255, 0.25);
+  background: rgba(255, 255, 255, 0.25);
   padding: 1rem 0;
   border-radius: 2rem;
   transition: 400ms all ease-in-out;
 }
-.card:hover{
+.card:hover {
   transform: scale(1.2);
 }
-.card img{
+.card img {
   width: 5rem;
+}
+@media screen and (max-width: 1240px) {
+  .cards {
+  position: absolute;
+  top: 100%;
+  display: grid;
+  grid-template-columns: 150px 150px 150px 150px 150px;
+  grid-template-rows: 150px 150px 150px ;
+  grid-gap: 2rem;
+  margin-bottom: 10rem;
+}
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 10rem;
+    background: rgba(255, 255, 255, 0.25);
+    padding: 1rem 0;
+    border-radius: 2rem;
+    transition: 400ms all ease-in-out;
+  }
+  .featured h1 {
+    text-align: center;
+    margin: 1.5rem 0;
+    color: cornflowerblue;
+  }
+}
+@media screen and (max-width: 1240px) {
+  .cards {
+    position: absolute;
+    top: 100%;
+    display: grid;
+    grid-template-columns: 150px 150px;
+    grid-template-rows: 150px 150px;
+    grid-gap: 2rem;
+    margin-bottom: 10rem;
+  }
+  .featured h1 {
+    text-align: center;
+    margin: 1.5rem 0;
+    color: cornflowerblue;
+    font-size: 1.5rem;
+  }
+    .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 10rem;
+    background: rgba(255, 255, 255, 0.25);
+    padding: 1rem 0;
+    border-radius: 2rem;
+    transition: 400ms all ease-in-out;
+  }
 }
